@@ -1,0 +1,415 @@
+/* Navbar */
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.nav-link {
+    margin-left: 40px;
+    background-image: linear-gradient(90deg, #007bff, #007bff, #007bff);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 350ms ease-in-out;
+}
+
+.nav-link:hover {
+    background-size: 100% 2px;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero {
+    background-color: #b8b8b8;
+    min-height: 450px;  
+    text-align: center;  
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem; 
+    font-family: 'Special Elite', cursive;   
+}
+
+.section-dark {
+    background-color: #0e0e19;
+    color: white;
+}
+
+.section-light {
+    color: black;
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Special Elite', cursive;   
+}
+
+.section-text {
+    font-size: 1.2rem;
+}
+
+.navbar-brand img {
+    background-color: black;
+}
+
+.text-dark {
+    color: black;
+}
+
+
+/*Hero*/
+
+.hero-principal {
+    padding: 1rem;
+}
+
+.hero-sup-img {
+    width: 200px;
+    height: 210px;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+
+/*About*/
+.aboutme {
+    height: 400px;
+    padding: 10px;
+}
+
+.aboutme .contenedor {
+    max-width: 800px;
+}
+
+.aboutme h2 {
+    font-size: 1.5rem;
+}
+
+
+/*Experience*/
+.experience {
+    padding: 40px 40px 60px 40px;
+}
+
+.experience a {
+    text-decoration: none;
+    color: #0a0a23;
+}
+
+.experience-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.coursera-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+}
+
+.experience img {
+    margin: 20px 0;
+    width: 90px;
+    height: 90px;
+}
+
+.experience .columna {
+    padding: 20px;
+    border: 1px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.badge-container {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.experience .columna:hover {
+    color: floralwhite;
+    background-color: #1b1b32;
+}
+
+/* Proyectos */
+.recent-proyects {
+    padding: 40px;
+}
+
+.proyects-description {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.recent-proyects img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyects-container {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyect {
+    position: relative;
+}
+
+.proyect:hover img {
+    opacity: 0.2;
+}
+
+.proyect:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .icons-container {
+    display: flex;
+ }
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+/*Contacto*/
+
+.contact .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.rectangle {
+    margin-top: -5rem;
+    background-color: rgb(63, 70, 82);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contact .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact .description {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact .whatsapp {
+    margin: 10px;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact .mail {
+    margin: 10px;
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.contact button .mail:hover {
+    color: #0000ff;
+}
+
+.contact button .whatsapp:hover {
+    color: #009220;
+}
+
+.contact button:hover {
+    background-color: black;
+}
+
+
+/* Footer */
+
+footer {
+    min-height: 500px;    
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.social-icons i {
+color: white;
+font-size: 1.5rem;
+transition: all 0.2s ease-in;
+}
+
+.social-icons a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.social-icons a:hover i {
+    color: black;
+}
+
+.author {
+    font-size: 15px;
+    color: #979797;
+    padding: 20px;
+}
+
+.back-top a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    width: 50px;
+    height: 50px;    
+    bottom: 30px;
+    right: 60px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.back-top i {
+color: black;
+font-size: 1.5rem;
+transition: all 0.2s ease-in;
+}
+
+.back-top a:hover {
+    background-color: black;
+    border: 2px solid white;
+}
+
+.back-top a:hover i {
+    color: white;
+}
+
+
+
+/*
+.back-top {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    bottom: 40px;
+    right: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+
+.back-top i:hover {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+*/
+
+/* Adaptacion */
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inf-img {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+   .overlay p {
+    font-size: 18px;
+   }
+   .overlay i {
+    font-size: 40px;
+   }
+}
