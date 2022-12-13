@@ -19,19 +19,22 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   </head>
 
 <body>
   <nav id="navbar" class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
+      <div class="justify-content-start col-3">
+        <a class="navbar-brand" href="#navbar">
+          <img src="images/Logo.png" width="60" alt="Logo">
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-brand" id="navbar-toggler">
-        <a href="#navbar">
-          <img src="images/Logo.png" width="50" alt="Logo">
-        </a>
+      </button>     
+      <div class="collapse navbar-collapse col-9 justify-content-end" id="navbar-toggler">
+        
         <ul class="navbar-nav d-flex justify-content-center align-items-center">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#aboutme">Sobre Mi</a>
@@ -51,15 +54,16 @@
   </nav>
 
   <!--Hero/primer componente-->
-  <section class="hero align-items-stretch">
+  <section class="hero justify-items-center">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 hero-principal d-flex flex-column justify-content-center align-items-center">
+      <div class="row align-items-end">
+        <div class="col-12 col-sm-4 hero-principal d-flex flex-column justify-items-center align-items-center">
           <img class="hero-sup-img rounded-circle" src="images/cortada.jpg" alt="Desarrollador">
           <h1>Hola! Soy Javier Scarione</h1>
           <h2>Desarrollo sitios web E2E con React ó Angular</h2>
         </div>
-        <div class="col-12 col-md-6 hero-inferior">
+
+        <div class="col-12 col-sm-8 hero-inferior">
           <img src="images/imagen.png"  class="hero-inf-img img-fluid" alt="Monitor, logos de HTML, CSS, JS, React, Angular y MongoDB">
         </div>
       </div>
@@ -69,6 +73,7 @@
   <!--About/Segundo componente-->
   <section id="aboutme" class="aboutme section-dark">
     <div class="contenedor text-center">
+      <h2 class="section-title">Acerca de Javier</h2>
       <h2 class="section-text">Soy un joven desarrollador web Full-Stack con sede en Córdoba, Argentina.
         He estado creando y capacitándome este último año y mi objetivo es crear interfaces atractivas, accesibles y eficaces para las personas que 
         además tengan un buen soporte Back-End para el manejo de la información.
@@ -92,7 +97,7 @@
           <p class="experience-title">Full-Stack Web Development with React</p>
           <p>Especialización que cubre los marcos front-end: Bootstrap 4 y React. Del lado del servidor, aprendí a implementar bases de datos NoSQL usando MongoDB, a trabajar dentro de un entorno Node.js y un marco Express, y comunicarse con el lado del cliente a través de una API RESTful.</p>
           <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQRZ3DHA6TEQ" target="_blank"><span class="badge text-bg-primary">Ver Certificado</span></a>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQRZ3DHA6TEQ" target="_blank"><span class="badge badge-pill badge-secondary">Ver Certificado</span></a>
           </div>
         </div>
         <div class="columna col-12 col-md-4">
@@ -100,7 +105,7 @@
           <p class="experience-title">Full Stack Web Development with Angular</p>
           <p>Especialización que cubre los marcos front-end: Bootstrap 4 y Angular. Del lado del servidor, aprendí a implementar bases de datos NoSQL usando MongoDB, a trabajar dentro de un entorno Node.js y un marco Express, y comunicarse con el lado del cliente a través de una API RESTful.</p>
           <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3R8XYM78MXP6" target="_blank"><span class="badge text-bg-primary">Ver Certificado</span></a>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3R8XYM78MXP6" target="_blank"><span class="badge badge-pill badge-secondary">Ver Certificado</span></a>
           </div>
         </div>
         <div class="columna col-12 col-md-4">
@@ -108,7 +113,7 @@
           <p class="experience-title">Agile with Atlassian Jira</p>
           <p>Aprendí los principios y prácticas comunes utilizados por las metodologías ágiles, que brindan un conjunto flexible de herramientas para usar en su función (por ejemplo, propietario del producto, experto en scrum, gerente de proyecto, miembro del equipo) en un equipo ágil. Aprendí principios ágiles y lean, incluidos kanban y scrum, y a utiliza Jira Software Cloud como herramienta para aplicar ejercicios prácticos.</p>
           <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/certificate/PLCA24PJTZLL" target="_blank"><span class="badge text-bg-primary">Ver Certificado</span></a>
+            <a href="https://www.coursera.org/account/accomplishments/certificate/PLCA24PJTZLL" target="_blank"><span class="badge badge-pill">Ver Certificado</span></a>
           </div>
         </div>
       </div>
@@ -126,7 +131,7 @@
           <div class="proyect">
             <img src="images/chus.png" alt="David Chu's">
             <div class="overlay">
-              <p>Restaurant David Chu's</p>
+              <p>David Chu's</p>
               <a class="icon-container" href="https://github.com/JaviScarione/Module5/tree/gh-pages" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
             </div>
           </div>
@@ -135,7 +140,7 @@
           <div class="proyect">
             <img src="images/confusion.png" alt="Confusion">
             <div class="overlay">
-              <p>Restaurant Confusion With Angular</p>
+              <p>Confusion With Angular</p>
               <a class="icon-container" href="https://github.com/JaviScarione/Angular" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
             </div>
           </div>
@@ -144,7 +149,7 @@
           <div class="proyect">
             <img src="images/confusion.png" alt="Confusion">
             <div class="overlay">
-              <p>Restaurant Confusion With React</p>
+              <p>Confusion With React</p>
               <a class="icon-container" href="https://github.com/JaviScarione/React" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
             </div>
           </div>
@@ -153,7 +158,7 @@
           <div class="proyect">
             <img src="images/mongo.png" alt="MongoDB">
             <div class="overlay">
-              <p>Restaurant Confusion Back End With MongoDB</p>
+              <p>Confusion Back End With MongoDB</p>
               <a class="icon-container" href="https://github.com/JaviScarione/NodeJS-MongoDB-Express" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
             </div>
           </div>
