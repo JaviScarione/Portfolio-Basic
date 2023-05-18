@@ -206,6 +206,10 @@ h1 {
     transition: all 0.2s ease;
 }
 
+.proyect .logojavi {
+    background: #0a0a23;
+}
+
 .proyects-container {
     padding-top: 60px;
     margin-bottom: 80px;
