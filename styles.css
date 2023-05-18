@@ -6,13 +6,13 @@
 /* Navbar */
 .navbar {
     padding: 0.5rem;
-    background-color: #f5f6f7;
+    background-color: #b8b8b8;
 }
 
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     margin-left: 40px;
-    background-image: linear-gradient(90deg, black, #a1a1a1, rgb(199, 199, 199));
+    background-image: linear-gradient(90deg, black, #a1a1a1);
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
