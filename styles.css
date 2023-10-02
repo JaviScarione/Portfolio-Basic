@@ -133,6 +133,7 @@ h1 {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 0;
+    min-height: 60px;
 }
 
 .coursera-text {
@@ -149,12 +150,10 @@ h1 {
 
 .experience .columna {
     padding: 20px;
-    border: 1px solid #8080804d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 
 .badge-container {
@@ -172,19 +171,16 @@ h1 {
 
 .badge-container span {
     border: 2px solid white;
-    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 
 .badge-container span:hover {
-    background-color: white;
-    color: #b8b8b8;
-    border: 2px solid rgb(13, 110, 253);
+    opacity: 0.6;
 }
 
 
-.experience .columna:hover {
-    color: floralwhite;
-    background-color: #1b1b32;
+.experience .columna:hover {    
+    transform: scale(1.1);
 }
 
 /* Proyects */
@@ -203,7 +199,7 @@ h1 {
     height: 80%;
     width: 80%;
     padding: 10px;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease-in-out;
     object-fit: contain;
 }
 
@@ -217,7 +213,7 @@ h1 {
 }
 
 .overlay {
-    transition: all 0.2s ease;
+    transition: all 0.4s ease-in-out;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -286,38 +282,31 @@ h1 {
 }
 
 .contact .whatsapp {
-    margin: 10px;
+    margin: 30px;
     color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    transition: all 0.4s ease-in-out;
 }
 
 .contact .mail {
-    margin: 10px;
+    margin: 30px;
     color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    transition: all 0.4s ease-in-out;
 }
 
-.contact button {
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 1.25em 2em;
-    margin: 10px;
-    border-radius: 100px;
-}
-
-.contact button .mail:hover {
+.contact .mail:hover {
     color: #0000ff;
 }
 
-.contact button .whatsapp:hover {
+.contact .whatsapp:hover {
     color: #009220;
 }
 
-.contact button:hover {
-    background-color: black;
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -350,13 +339,13 @@ footer {
     margin: 10px;
     border: 2px solid white;
     border-radius: 50%;
-    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 
 .social-icons i {
 color: white;
 font-size: 1.5rem;
-transition: all 0.2s ease-in;
+transition: all 0.4s ease-in-out;
 }
 
 .social-icons a:hover {
@@ -386,13 +375,13 @@ transition: all 0.2s ease-in;
     border: 2px solid black;
     background-color: white;
     border-radius: 50%;
-    transition: all 0.2s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 
 .back-top i {
 color: black;
 font-size: 1.5rem;
-transition: all 0.2s ease-in;
+transition: all 0.4s ease-in-out;
 }
 
 .back-top a:hover {
