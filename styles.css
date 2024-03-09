@@ -80,6 +80,10 @@ h1 {
 
 /*Hero*/
 
+.container-hero {
+    margin-top: 50px;
+}
+
 .hero-principal {
     padding-bottom: 2rem;
     padding-top: 1rem;
