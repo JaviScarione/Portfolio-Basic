@@ -192,6 +192,11 @@ h1 {
     padding: 40px;
 }
 
+.proyects-container .row {
+    display: flex;
+    justify-content: center;
+}
+
 .proyects-description {
     font-size: 1.2rem;
     color: #584e4e;
@@ -209,6 +214,7 @@ h1 {
 
 .proyect .logojavi {
     background: #0a0a23;
+    border-radius: 20px;
 }
 
 .proyects-container {
