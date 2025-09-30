@@ -407,11 +407,11 @@ transition: all 0.4s ease-in-out;
 
 /* Adaptacion */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 1024px) {
     .hero-inf-img {
       max-width: 600px;
     }
-  }
+}
 
 @media screen and (max-width: 600px) {
    .overlay p {
@@ -425,5 +425,11 @@ transition: all 0.4s ease-in-out;
     padding-top: 5.5rem;
     top: 50%;
     left: 50%;
+    }
 }
-}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .hero-principal h2 {
+      display: none;
+    }
+  }
