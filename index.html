@@ -1,369 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Javier Scarione">
-    <meta name="description" content="Javier Scarione's Portfolio">
-    <meta name="keywords" content="HTML, CSS3, JavaScript, React, React Native">
-    <!--Title-->
-    <title>Javier Scarione | Full Stack Development with React and React Native</title>
-    <link rel="icon" type="image/x-icon" href="images/Logo.png">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--Bootstrap-Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <!--CSS-->
-    <link href="styles.css" rel="stylesheet">
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Javier Scarione">
+  <meta name="description" content="Javier Scarione — Project Manager, QA Tester and Full Stack Developer specialized in React JS and custom Shopify stores.">
+  <meta name="keywords" content="HTML, CSS3, JavaScript, React, React Native, Shopify, QA, Project Manager">
+  <meta name="theme-color" content="#0b0b16">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Javier Scarione | Full Stack Developer">
+  <meta property="og:description" content="Project Manager, QA Tester and Full Stack Developer specialized in React JS and custom Shopify stores.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/Logo.png">
+
+  <title>Javier Scarione | Full Stack Developer &amp; QA Tester</title>
+  <link rel="icon" type="image/png" href="images/Logo.png">
+
+  <!-- Bootstrap Icons (icon glyphs only, no framework JS) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="styles.css" rel="stylesheet">
+</head>
 <body>
-  <nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top">
-    <div class="container-fluid container">
-      <div class="justify-content-start col-3">
-        <a class="navbar-brand" href="#hero">
-          <img src="images/Logo.png" width="60" alt="Logo">
-        </a>
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>     
-      <div class="collapse navbar-collapse col-9 justify-content-end" id="navbar-toggler">
-        
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#aboutme">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Studies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyects">Proyects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Navbar -->
+  <header id="navbar" class="navbar">
+    <div class="navbar-inner container">
+      <a class="brand" href="#hero" aria-label="Javier Scarione — back to top">
+        <img src="images/icono.png" alt="" width="38" height="38">
+        <span>Javier Scarione</span>
+      </a>
+
+      <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="navMenu" class="nav-menu">
+        <a class="nav-link" data-nav href="#about">About</a>
+        <a class="nav-link" data-nav href="#skills">Skills</a>
+        <a class="nav-link" data-nav href="#projects">Projects</a>
+        <a class="nav-link" data-nav href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Let's talk</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!--Hero/primer componente-->
-  <section id="hero" class="hero justify-items-center">
-    <div class="container container-hero">
-      <div class="row align-items-end">
-        <div class="col-12 col-md-4 hero-principal d-flex flex-column justify-items-center align-items-center">
-          <img class="hero-sup-img rounded-circle" src="images/img-new.jpg" alt="Desarrollador">
-          <h1>Hello, I'm Javier Scarione</h1>
-          <h2>Project Manager | QA Tester</br>Full Stack Developer</h2>
-        </div>
+  <main id="main">
 
-        <div class="col-12 col-md-8 hero-inferior">
-          <img src="images/imagen.png"  class="hero-inf-img img-fluid" alt="Monitor, logos de HTML, CSS, JS, React, Angular y MongoDB">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--About/Segundo componente-->
-  <section id="aboutme" class="aboutme section-dark">
-    <div class="contenedor text-center">
-      <h2 class="section-title">About Javier</h2>
-      <h2 class="section-text">
-        Project Manager and QA Tester with solid experience in full stack web development, specialized in React JS and building custom Shopify stores. I combine my technical background with strong organizational, communication, and process improvement skills to ensure quality and efficiency in every project.
-
-I’ve led development teams, coordinated project deliveries, and ensured alignment between technical goals and business objectives. My focus is on creating stable, scalable digital products with optimized user experiences.
-
-I have hands-on experience across the entire software development lifecycle — from planning and development to testing, deployment, and maintenance. I enjoy working in agile environments, collaborating with multidisciplinary teams, and constantly striving to exceed client expectations.
-
-      </br></br>Specialties: Project Management, QA Testing, React JS, React Native, Shopify (custom stores, setup, and optimization), WordPress, REST APIs, version control (Git), and agile methodologies.
-    </div>
-  </section>
-
-  <!--Studies/Tercer Componente-->
-  <section id="experience" class="experience section-light">
-    <div class="container text-center">
-      <div class="row">
-        <!--<div class="columna col-12">
-          <a href="https://www.coderhouse.com/" target="_blank"><img src="https://staticclvf5a.lavozdelinterior.com.ar/files/promociones/miniatura_270x160_-_ch.jpg" alt="Logo Coursera"></a>
-          <p class="coursera-text">Estudios en Coderhouse.</p>
-        </div>    --> 
-        <div class="columna col-12 col-md-4">
-          <img src="images/js.png" alt="Logo React">
-          <p class="experience-title">Javascript</p>
-          <!--<p>En este curso, aprendí los fundamentos del lenguaje de programación más utilizado en la actualidad, con el cual es posible crear aplicaciones de todo tipo. Explorando herramientas propias del mismo, indagando casos prácticos de aplicación, utilidad de las librerías estudiando jQuery y aprendí a aplicar técnicas de desarrollo para apps modernas con AJAX.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://drive.google.com/file/d/1sCtCf39KUucsHkxnDbluE370R4XvJQr7/view?usp=drive_link" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Project Manager · QA Tester · Full Stack Developer</p>
+          <h1>Hi, I'm Javier Scarione.</h1>
+          <p class="hero-text">I plan, build and ship reliable web products — from custom React apps to Shopify storefronts — with an eye for quality and a process-driven mindset.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-social" aria-label="Social links">
+            <a href="mailto:javierscarione@gmail.com" aria-label="Email Javier"><i class="bi bi-envelope-at-fill"></i></a>
+            <a href="https://github.com/JaviScarione" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/javierscarione/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.link/6qyqzi" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
-        <div class="columna col-12 col-md-4">
-          <img src="images/react.png" alt="Logo Angular">
-          <p class="experience-title">React JS</p>
-          <!--<p>En este curso, aprendí a programar por componentes utilizando Javascript, JS, ES6, y también conocí las ventajas de utilizar flujos de datos. Además, apliqué el manejo de rutas utilizando Firebase y comprendí la utilización del virtual DOM a través del desarrollo con React JS.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://drive.google.com/file/d/19JFvLnSsFWFWDiEthvtUtpncHlHRZV1W/view?usp=drive_link" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
-          </div>
-        </div>
-        <div class="columna col-12 col-md-4">
-          <img src="images/react.png" alt="Logo Jira">
-          <p class="experience-title">React Native</p>
-          <!--<p>En este curso aprenderé los conocimientos y bases para crear aplicaciones bridge con capacidad de despliegue tanto para Android como iOS, utilizando React Native, Javascript y un software de prototipado. Me conectaré a APIs y aprenderé la capacidad de sync.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://drive.google.com/file/d/1DC_Y_YRsL6mU6Swq-uIULOJmplGovtyT/view?usp=drive_link" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
-<!--             <a target="_blank"><span class="badge badge-pill">Próximamente</span></a>
- -->          </div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <!--<div class="col-12">
-          <a href="https://www.coursera.org/" target="_blank"><img src="images/coursera.png" alt="Logo Coursera"></a>
-          <p class="coursera-text">Estudios en Coursera.</p>
-        </div> -->     
-        <div class="columna col-12 col-md-4">
-          <img src="images/react.png" alt="Logo React">
-          <p class="experience-title">Full-Stack Web Development with React</p>
-          <!--<p>Especialización que cubre los marcos front-end: Bootstrap 4 y React. Del lado del servidor, aprendí a implementar bases de datos NoSQL usando MongoDB, a trabajar dentro de un entorno Node.js y un marco Express, y comunicarse con el lado del cliente a través de una API RESTful.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQRZ3DHA6TEQ" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
-          </div>
-        </div>
-        <div class="columna col-12 col-md-4">
-          <img src="images/shopify-logo.png" alt="Logo Shopify">
-          <p class="experience-title">Shopify Development Fundamentals</p>
-          <!--<p>Especialización que cubre los marcos front-end: Bootstrap 4 y Angular. Del lado del servidor, aprendí a implementar bases de datos NoSQL usando MongoDB, a trabajar dentro de un entorno Node.js y un marco Express, y comunicarse con el lado del cliente a través de una API RESTful.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://www.credly.com/badges/502372d5-bf2e-4730-a963-63600245efbd/public_url" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
-          </div>
-        </div>
-        <!--<div class="columna col-12 col-md-4">
-          <img src="images/angular.png" alt="Logo Angular">
-          <p class="experience-title">Full Stack Web Development with Angular</p>
-          <p>Especialización que cubre los marcos front-end: Bootstrap 4 y Angular. Del lado del servidor, aprendí a implementar bases de datos NoSQL usando MongoDB, a trabajar dentro de un entorno Node.js y un marco Express, y comunicarse con el lado del cliente a través de una API RESTful.</p>
-            <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3R8XYM78MXP6" target="_blank"><span class="badge badge-pill badge-secondary">View Certificate</span></a>
-          </div>
-        </div>-->
-        <div class="columna col-12 col-md-4">
-          <img src="images/jira.png" alt="Logo Jira">
-          <p class="experience-title">Agile with Atlassian Jira</p>
-          <!--<p>Aprendí los principios y prácticas comunes utilizados por las metodologías ágiles, que brindan un conjunto flexible de herramientas para usar en su función en un equipo ágil. Aprendí principios ágiles y lean, incluidos kanban y scrum, y a utiliza Jira Software Cloud como herramienta para aplicar ejercicios prácticos.</p>
-          -->
-            <div class="badge-container">
-            <a href="https://www.coursera.org/account/accomplishments/certificate/PLCA24PJTZLL" target="_blank"><span class="badge badge-pill">View Certificate</span></a>
+
+        <div class="hero-photo reveal">
+          <div class="hero-photo-ring">
+            <img src="images/img-new.jpg" alt="Portrait of Javier Scarione">
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-   <!--Proyectos Colaboraciones/Cuarto componente-->
-  <section id="proyects" class="recent-proyects section-light d-flex flex-column">
-    <h2 class="section-title text-dark">Collaborative Projects</h2>
-    <h3 class="proyects-description">These are some of the projects I have collaborated</h3>
-    <!--Proyectos-->
-    <div class="container text-center proyects-container align-items-center">
-      <div class="row g-5">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images//logo-np.svg" alt="Logo Nude Project">
-            <div class="overlay">
-              <a class="icon-container" href="https://nude-project.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
+    <!-- About -->
+    <section id="about" class="section section-dark">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow-light">About me</p>
+          <h2 class="section-title">Building quality products, end to end</h2>
+          <p>Project Manager and QA Tester with solid experience in full stack web development, specialized in React JS and building custom Shopify stores. I combine technical skills with strong organization, communication and process-improvement abilities to keep every project on quality and on schedule.</p>
+          <p>I've led development teams, coordinated project deliveries, and kept technical work aligned with business goals — always aiming for stable, scalable products with a great user experience.</p>
+          <p>I work across the full software lifecycle, from planning and development to testing, deployment and maintenance, and I enjoy collaborating with multidisciplinary teams in agile environments.</p>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images//sb-logo.svg" alt="Logo Sole Bliss">
-            <div class="overlay">
-              <a class="icon-container" href="https://solebliss.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images//ms-logo.svg" alt="Logo Marfa Stance">
-            <div class="overlay">
-              <a class="icon-container" href="https://www.marfastance.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/TE-text-logo-black.avif" alt="Tyler Ellis Logo" style="max-width: 200px;">
-            <div class="overlay">
-              <a class="icon-container" href="https://tylerellis.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/hunza-logo.svg" alt="Logo Hunza G">
-            <div class="overlay">
-              <a class="icon-container" href="https://www.hunzag.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/og-logo.svg" alt="Logo The One Glove">
-            <div class="overlay">
-              <a class="icon-container" href="https://www.theoneglove.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-         <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/jl-logo.svg" alt="Jenn Litz Logo">
-            <div class="overlay">
-              <a class="icon-container" href="https://jennlitz.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/ai-logo.svg" alt="Anglo Italian Logo">
-            <div class="overlay">
-              <a class="icon-container" href="https://angloitalian.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-
-       
-
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/mb-logo.svg" alt="Maison Beast Logo">
-            <div class="overlay">
-              <a class="icon-container" href="https://maisonbeast.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-      
-      </div>
-    </div>
-  </section>
-
-  <!--Proyectos Propios/Cuarto componente-->
-  <section id="proyects" class="recent-proyects section-light d-flex flex-column">
-    <h2 class="section-title text-dark">My Proyects</h2>
-    <!--<h3 class="proyects-description">These are some of the projects I have created</h3>-->
-    <!--Proyectos-->
-    <div class="container text-center proyects-container align-items-center">
-      <div class="row g-5">
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images//dei.webp" alt="Logo Deseo de Emigrar a Italia">
-            <div class="overlay">
-              <p>Deseo de Emigrar a Italia</p>
-              <a class="icon-container" href="https://deseodeemigraraitalia.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images//atoj.png" alt="Logo Atoj">
-            <div class="overlay">
-              <p>Atoj Studio Creativo</p>
-              <a class="icon-container" href="https://atoj-studio-creativo.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/silvi.png" alt="Logo Silvi">
-            <div class="overlay">
-              <p>Silvi's Potfolio</p>
-              <a class="icon-container" href="https://silvi-s-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/Optimational-Logo-Header.webp" alt="Logo Optimational">
-            <div class="overlay">
-              <p>Optimational</p>
-              <a class="icon-container" href="https://optimational.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/Logo.png" alt="Logo Javi" class="logojavi">
-            <div class="overlay">
-              <p>Cart React Js</p>
-              <a class="icon-container" href="https://react-coderhouse-ten.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div class="proyect">
-            <img src="images/Logo.png" alt="Logo Javi" class="logojavi">
-            <div class="overlay">
-              <p>Cart Javascript</p>
-              <a class="icon-container" href="https://js-coderhouse-delta.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-display"></i></a>
-            </div>
-          </div>
+        <div class="specialties reveal">
+          <p class="eyebrow eyebrow-light">Specialties</p>
+          <ul class="chip-list">
+            <li>Project Management</li>
+            <li>QA Testing</li>
+            <li>React JS</li>
+            <li>React Native</li>
+            <li>Shopify Development</li>
+            <li>WordPress</li>
+            <li>REST APIs</li>
+            <li>Git</li>
+            <li>Agile Methodologies</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!--Contacto/Quinto componente-->
-  <section id="contact" class="contact section-dark">
-    <div class="container">
-      <div class="rectangle container text-center d-flex justify-content-center">
-        <div class="row">
-          <div class="col-12 col-md-4 section-title">
-            Let's talk!
-          </div>
-          <div class="col-12 col-md-4 description">
-            Contact me to start your web development project and move from the abstract to the concrete.
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="buttons">
-            <a class="mail" href="mailto:javierscarione@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-            <a class="whatsapp" href="https://w.app/s8buxy" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </div>    
-  </section>
+    </section>
 
-  <!--Footer/Sexto componente-->
-  <footer class="section-dark d-flex flex-column align-items-center justify-content-center">
-    <img class="footer-logo" src="images/icono.png" alt="Logo del portfolio">
-    <p class="footer-text text-center">Every day I learn something new.<br>Let's create something together!</p>
-    <div class="social-icons d-flex flex-wrap">
-      <a class="mail" href="mailto:javierscarione@gmail.com"><i class="bi bi-envelope-at-fill"></i></a>
-      <a href="https://github.com/JaviScarione" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/javierscarione/" target="_blank"><i class="bi bi-linkedin"></i></a>
-    </div>
-    <div class="author">
-      Created by Javier Scarione (2023) &#169;
-    </div>
-    <div class="back-top">
-      <a href="#hero"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <!-- Skills / Certifications -->
+    <section id="skills" class="section section-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills &amp; certifications</p>
+          <h2 class="section-title">Always learning something new</h2>
+        </div>
+
+        <div class="tools-strip reveal" aria-label="Tools and technologies">
+          <img src="images/html.png" alt="HTML5" loading="lazy">
+          <img src="images/css.png" alt="CSS3" loading="lazy">
+          <img src="images/js.png" alt="JavaScript" loading="lazy">
+          <img src="images/react.png" alt="React" loading="lazy">
+          <img src="images/git.png" alt="Git" loading="lazy">
+          <img src="images/mongo.png" alt="MongoDB" loading="lazy">
+          <img src="images/jira.png" alt="Jira" loading="lazy">
+          <img src="images/shopify-logo.png" alt="Shopify" loading="lazy">
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <img src="images/js.png" alt="" loading="lazy">
+            <h3>JavaScript</h3>
+            <a class="cert-link" href="https://drive.google.com/file/d/1sCtCf39KUucsHkxnDbluE370R4XvJQr7/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <img src="images/react.png" alt="" loading="lazy">
+            <h3>React JS</h3>
+            <a class="cert-link" href="https://drive.google.com/file/d/19JFvLnSsFWFWDiEthvtUtpncHlHRZV1W/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <img src="images/react.png" alt="" loading="lazy">
+            <h3>React Native</h3>
+            <a class="cert-link" href="https://drive.google.com/file/d/1DC_Y_YRsL6mU6Swq-uIULOJmplGovtyT/view?usp=drive_link" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <img src="images/react.png" alt="" loading="lazy">
+            <h3>Full-Stack Web Development with React</h3>
+            <a class="cert-link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/AQRZ3DHA6TEQ" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <img src="images/shopify-logo.png" alt="" loading="lazy">
+            <h3>Shopify Development Fundamentals</h3>
+            <a class="cert-link" href="https://www.credly.com/badges/502372d5-bf2e-4730-a963-63600245efbd/public_url" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <img src="images/jira.png" alt="" loading="lazy">
+            <h3>Agile with Atlassian Jira</h3>
+            <a class="cert-link" href="https://www.coursera.org/account/accomplishments/certificate/PLCA24PJTZLL" target="_blank" rel="noopener noreferrer">View certificate <i class="bi bi-arrow-up-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Collaborative projects</h2>
+          <p class="section-sub">Stores and sites I've worked on with development and QA teams.</p>
+        </div>
+
+        <div class="logo-grid">
+          <a class="logo-card reveal" href="https://nude-project.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/logo-np.svg" alt="Nude Project" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://solebliss.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/sb-logo.svg" alt="Sole Bliss" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://www.marfastance.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/ms-logo.svg" alt="Marfa Stance" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://tylerellis.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/TE-text-logo-black.avif" alt="Tyler Ellis" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://www.hunzag.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/hunza-logo.svg" alt="Hunza G" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://www.theoneglove.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/og-logo.svg" alt="The One Glove" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://jennlitz.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/jl-logo.svg" alt="Jenn Litz" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://angloitalian.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/ai-logo.svg" alt="Anglo Italian" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://maisonbeast.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/mb-logo.svg" alt="Maison Beast" loading="lazy">
+          </a>
+          <a class="logo-card reveal" href="https://optimational.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/Optimational-Logo-Header.webp" alt="Optimational" loading="lazy">
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-dark contact">
+      <div class="container contact-card reveal">
+        <h2 class="section-title">Let's talk!</h2>
+        <p>Contact me to start your web development project and move from the abstract to the concrete.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:javierscarione@gmail.com"><i class="bi bi-envelope-at-fill"></i> Email me</a>
+          <a class="btn btn-ghost" href="https://wa.link/6qyqzi" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="images/icono.png" alt="Javier Scarione logo">
+      <p class="footer-text">Every day I learn something new.<br>Let's create something together!</p>
+      <div class="social-icons">
+        <a href="mailto:javierscarione@gmail.com" aria-label="Email"><i class="bi bi-envelope-at-fill"></i></a>
+        <a href="https://github.com/JaviScarione" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/javierscarione/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <p class="author">Created by Javier Scarione &middot; <span id="year"></span> &#169;</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <button id="backTop" class="back-top" type="button" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
